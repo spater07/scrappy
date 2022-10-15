@@ -1,5 +1,4 @@
-from imports import *
-import ScrapeDeals as srcapeDeals
+from bestdealsImports import *
 
 app = Flask(__name__)
 
@@ -30,7 +29,7 @@ def scrape():
     # t1.join()
     # t2.join()
     # t3.join()
-    # time.sleep(20)
+    time.sleep(20)
 
     time.sleep(5)
     if len(outputData)==0:

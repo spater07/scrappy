@@ -26,6 +26,8 @@ class RelianceDigitalSpider(scrapy.Spider):
         self.query = productName
         self.category = productCategory
         self.outputData = outputData
+        print("<+++++++++++++Reliance+++++++++++++++++>")
+        print(self.query)
 
         super().__init__(**kwargs)
 
@@ -59,6 +61,8 @@ class RelianceDigitalSpider(scrapy.Spider):
 
     def parse_product_page(self, response):
         item = ScrapedItems()
+        print("<+++++++++++++Reliance+++++++++++++++++>")
+
 
         website = 'Reliance-Digital'
         category = self.category

@@ -25,6 +25,7 @@ class FlipkartSpider(scrapy.Spider):
         self.query=productName
         self.category=productCategory
         self.outputData = outputData
+
         super().__init__( **kwargs)
 
     def start_requests(self):

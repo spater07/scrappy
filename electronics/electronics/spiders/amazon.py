@@ -24,6 +24,7 @@ class AmazonSpider(scrapy.Spider):
         self.query = productName
         self.category = productCategory
         self.outputData = outputData
+        print(self.query)
         super().__init__(**kwargs)
 
 
@@ -55,6 +56,7 @@ class AmazonSpider(scrapy.Spider):
 
     def parse_product_page(self, response):
         item = ScrapedItems()
+        print("<+++++++++++++Amazon+++++++++++++++++>")
 
         website = f'Amazon'
         category = self.category
@@ -90,6 +92,9 @@ class AmazonSpider(scrapy.Spider):
         item['_class']=_class
         
         self.outputData.append(dict(item))
+
+        print("<------------Amazon---------->")
+        print(item)
    
         yield item
 
