@@ -13,6 +13,7 @@ from scrapy import signals
 from electronics.electronics.spiders.reliance import RelianceDigitalSpider
 from electronics.electronics.spiders.flipkart import FlipkartSpider
 from electronics.electronics.spiders.amazon import AmazonSpider
+from mongoconfig import db
 
 from scrapyStatus import ScrapyResponse
 from scrapyResponse import Scrapy
