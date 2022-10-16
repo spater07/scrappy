@@ -1,0 +1,7 @@
+flask
+waiting
+scrapy
+gunicorn
+nginx
+flask_pymongo
+scrapy-user-agents
