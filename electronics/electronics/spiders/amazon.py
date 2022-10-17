@@ -24,7 +24,7 @@ class AmazonSpider(scrapy.Spider):
         self.query = productName
         self.category = productCategory
         self.outputData = outputData
-        print(self.query)
+        # print(self.query)
         super().__init__(**kwargs)
 
 
@@ -93,8 +93,8 @@ class AmazonSpider(scrapy.Spider):
         
         self.outputData.append(dict(item))
 
-        print("<------------Amazon---------->")
-        print(item)
+        # print("<------------Amazon---------->")
+        # print(item)
    
         yield item
 

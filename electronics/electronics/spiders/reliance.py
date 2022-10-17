@@ -26,8 +26,8 @@ class RelianceDigitalSpider(scrapy.Spider):
         self.query = productName
         self.category = productCategory
         self.outputData = outputData
-        print("<+++++++++++++Reliance+++++++++++++++++>")
-        print(self.query)
+        # print("<+++++++++++++Reliance+++++++++++++++++>")
+        # print(self.query)
 
         super().__init__(**kwargs)
 
